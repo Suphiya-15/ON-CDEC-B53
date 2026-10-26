@@ -1,0 +1,38 @@
+
+**Regions and Avaialbility Zone
+--> A region is a seperate geographical area where AWS has its data centers.
+eg: ap-south-1, us-east-1 etc
+--> An Avaialbility zone is an isolated location within an AWS region, consisting of one or more data centers.
+--> A region contains multiple AZ.
+
+
+                             EC2
+                    Elastic Compute Cloud
+                             -----------> Compute
+
+--> EC2 is an AWS service that allow us to create and use virtual machine
+--> Virtual server/ VM / Virtual machine / server / node / Instance
+
+**Steps to create an instance:
+1. Name and tags : 
+--> Server Metadata  
+
+2. AMI :
+--> Selecting OS
+
+3. Instance Type: 
+--> RAM + CPU
+
+4. Firewall / Security group:
+--> A security group is a set of firewall rules that control the traffic for your instance.
+
+5. Storage:
+--> select storage HDD or SSD
+
+6. Key Pairs:
+--> You can use a key pair to securely connect to your instance.
+--> 2 keys: 1. Public key --> kept with AWS
+            2. Private key --> Downloaded by user
+
+CW: Create ubuntu instance
+HW: Create Windows instance / Create amazon linux instance

@@ -1,0 +1,25 @@
+                                Cloud Computing
+
+--> It is an ondemand delivery of compute power, database, networking, security and other IT resources
+through cloud provider via Internet.
+
+**Main three services in CLoud:
+1. IaaS : Infrastructure as a Service
+2. PaaS : Platform as a Service
+3. SaaS : Software as a Service
+
+**Deployment models of cloud / types of cloud:
+1. public cloud:
+2. Private Cloud: enterprise cloud
+3. Hybrid Cloud:
+
+16 CPU cores
+64 gb RAM
+1 TB storage
+------>
+vm1: 8gbRAM
+vm2: 16GB
+vm3: 8gb
+
+Virtualization:
+--> 
