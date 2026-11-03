@@ -36,3 +36,111 @@ eg: ap-south-1, us-east-1 etc
 
 CW: Create ubuntu instance
 HW: Create Windows instance / Create amazon linux instance
+
+
+SSH Protocol: (Secure SHell)
+--> SSH is a network protocol used to connect linux instance remotely.
+--> SSH works on port no 22
+--> support encrypted connections and authentication.
+
+RDP Protocol: (Remote Desktop Protocol)
+--> RDP is a network protocol used to connect windows instance remotely.
+--> RDP works on port no 3389
+
+**Status check:
+--> EC2 status checks are health checks that help us to determine whether an instance is working properly.
+AWS provide two main statrus check:
+1. System status check
+--> checking AWS infrastructure: pysical host, networking and power
+
+2. Instance status check
+--> checking instance's OS: booting
+
+3. EBS reachability:
+--> Checking Storage 
+
+**Steps to connect windows instance:
+1. create windows instance
+2. connect
+3. goto RDP
+4. download RDP shortcut file
+5. create windows password
+6. upload private key
+7. decrypt password
+8. copy password and paste it on RDP shortcut file
+9. yes
+
+
+**Web Server:
+--> A web server is a computer that stores web contents.
+eg: Nginx, Apache, IIS
+
+HTTP: Hypertext Transfer Protocol
+--> it is communication protocol that allows a web browser(client) and web server
+(server) to exchange information
+--> HTTP works on port no 80
+
+HTTPS: Hypettext Transfer Protocol Secure
+--> HTTPS is HTTP protected by TLS (Transport Layer Security) encryption
+--> It protects data exchange between browser and server, helping prevent attckaers from reading or modifying it while travels across the network.
+--> HTTPS works on port no 443
+
+Demo 2: Hosting website using ec2 instance
+
+1. create linux instance
+--> allow HTTP, HTTPS and SSH protocols
+2. connect
+sudo su -
+yum install httpd -y
+echo "<h1>comment</h1>" >/var/www/html/index.html
+systemctl start httpd
+systemctl status httpd
+
+HW: work on nginx server
+
+location: /usr/share/mginx/html
+
+
+**Instance Purchasing options:
+
+1. On demand Instances:
+--> pay for what you use:
+---> Linux and Windows = billing per second,after the first min.(70sec)--> 1 min 10 sec
+---> all othet OS = billing per hour
+--> has the highest cost but no upfront payment
+--> no long term commitment
+--> recommended for short term workload
+
+2. Reserved Instance:
+--> upto 72% discount compared to on demand
+--> reservation period: 1 year or 3 years
+--> payment options: No upfront, partial upfront, All upfront
+
+3. Spot Instance:
+--> can get a discount of up to 90% compared to on demand
+--> spot instance --> ununsed instance capacity
+--> the most cost efficient instance in AWS
+--> used for testing, data analysis, or any distributed workload
+--> not suitable for critical jobs or database
+
+4. Dedicated host:
+--> A physical server with 
+ec2 instaance capacity fully dedicated to your use.
+--> The most expensive option
+
+5. Saving plans:
+--> commit to a certain type of usage ($10/hour for 1 year or 3 years)
+
+6. capacity reservation:
+--> reserve on demand instances capacity in a specific AZ for any duration
+--> you always have access to EC2 capacity when you need it.
+
+
+**Instance Type family:
+1. General Purpose
+2. Compute optimized
+3. Memory optimized
+4. storage optimized
+5. HPA
+6. Accelated Computing
+

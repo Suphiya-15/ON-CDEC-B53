@@ -1,0 +1,14 @@
+                                 EFS
+                        Elastic File System
+                                  ----------> Storage
+
+    EBS  vs  EFS
+
+    --> EFS is a fully managed, scalable,  shared file System
+    --> it allows multiple EC2 instances to access the same files simultaneously
+    --> NFS : Network File System
+    ------> NFS is a network protocol that allows computer to access files or 
+    directories stored on network.
+    ------> NFS works on port no 2049
+
+    

@@ -1,0 +1,17 @@
+                            EBS
+                    Elastic Block Storage
+
+**AWS provides two types of storage for instance:
+1. Instant store
+2. EBS:
+--> EBS is a block level storage service it provides persistent storage to ec2 instance.
+
+                       **Snapshot**
+
+--> EBS snapshots are point in time image/copy of your EBS volume.
+--> Per account upto 5000 EBS volume can be created.
+--> Per acount upto 10000 EBS snapshots can be created.
+--> Volumes are AZ specific, snapshots are region specific.
+--> EBS snapshot is an incremental data backup
+--> the first backup of a volume backsup all the data.
+--> Every next  backup copies only a block od data that has changed since last snapshot
