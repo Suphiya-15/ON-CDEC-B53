@@ -6,9 +6,28 @@
 
     --> EFS is a fully managed, scalable,  shared file System
     --> it allows multiple EC2 instances to access the same files simultaneously
+    --> EFS onlyy works on Linux OS.
+    --> Windows : Windows Fsx
+
+
     --> NFS : Network File System
     ------> NFS is a network protocol that allows computer to access files or 
     directories stored on network.
     ------> NFS works on port no 2049
 
-    
+    **Demo: EFS
+    1. Create 2 linux instance
+       ------> open nfs protocol
+    2. go to efs service
+    3. create file system
+       -----> select mount targets 
+       -----> select our security group --> NFS, SSH
+    4. go to linux instance
+    5. connect instances
+    sudo su -
+    yum install amazon-efs-utils -y
+    mkdir efs
+    --> go to efs --> attch --> go to efs mount helper --> select 1st command
+    --> paste it on instances
+    --> cd efs
+    --> check results

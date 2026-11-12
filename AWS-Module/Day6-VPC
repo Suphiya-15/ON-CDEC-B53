@@ -1,0 +1,12 @@
+                              VPC
+                    Virtual Private Cloud
+
+--> VPC is a virtual network or datacenter inside AWS for one client.
+--> It is logically isolated from the other virtual networks in the AWS cloud.
+--> max 5 VPC  can be created in region and 200 subnets in 1 VPC
+--> once we created VPC, DHCP, NACL and security group willl be created automatically.
+(DHCP : Dynamic Host Configuration Protocol)
+--> once the VPC is created, you can not changed its CIDR
+--> if you need different CIDR size then created new VPC
+--> Different subnets within VPC van not overlap.
+

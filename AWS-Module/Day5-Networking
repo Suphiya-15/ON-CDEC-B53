@@ -1,0 +1,132 @@
+                          Networking
+IPv4
+IPv6
+
+*IPv4:
+--> It stands for Internet Protocol Version 4.
+--> IPv4 uses a 32-bit addressing system.
+--> 192.168.1.10
+
+192     .     168    .    1     .     10
+octet 1   octet 2       octet3      octet4
+8bit        8bit         8bit       8bit      = 32bit
+
+--> IPv4 address contains:
+1. 4 numbers
+2. each number is seperated by dot (.)
+3. each number called an octet
+4. total = 4*8 = 32 bits.
+
+bit = 0 and 1
+
+00000000 = 0
+00000001 = 1
+
+128  64  32  16  8  4  2  1
+ 0   0    0  0   0  0  0  0 = 0
+ 0   0    0  0   0  0  0  1 = 1
+ 0   0    0  0   0  0  1  0 = 2
+ 0   0    0  0   1  0  1  0  = 10
+ 1   1    0  0   0  0  0  0  = 192
+ 1   0    1  0   1  0  0  0  = 168
+ 1   1    1  1   1  1  1  1  = 255
+
+ 192.168.1.10  =  11000000.10101000.00000001.00001010
+
+ --> octet have a range between 0 to 255
+
+ 00000000 = 0
+ 11111111 = 1
+
+2^32 = 4 billion
+
+IPv6 : 128 bits
+
+
+                           **CIDR**
+                    Classless Inter-Domain Routing
+
+--> It is set of an IP standards that are used to allocate IP address
+-->syntax:
+              0.0.0.0/n 
+              
+        here n declares the network size
+
+2 ^ 0 = 1
+2 ^ 1 = 2
+2 ^ 2 = 4
+2 ^ 3 = 8
+2 ^ 4 = 16
+2 ^ 5 = 32
+2 ^ 6 = 64
+2 ^ 7 = 128
+2 ^ 8 = 256
+2 ^ 9 = 512
+2 ^ 10 = 1024
+
+1. 512 servers, CIDR??
+--> 10.0.0.0/__
+
+   2 ^ __ = 512  = 9
+   32 - 9 = 23
+
+   10.0.0.0/23 ----> 512 IP addresses
+
+2. 1000 servers, CIDR??
+
+10
+32-10 : 22
+
+192.168.0.0/22
+
+3. 16 servers, CIDR?
+--> 10.0.0.0/28
+
+4. 4 servers , CIDR?
+--> 10.0.0.0/30
+
+--------------------------------------------------------------------------------------
+
+1. 20.0.0.0/26 --> ip addresss??
+
+32-26 : 6
+2 ^ 6 : 64
+-----> 64 adddress
+
+2. /28
+--> 16 addresses
+
+3. /24
+--> 32 - 24 : 8
+--> 2 ^ 8 : 256
+
+4. /20
+32 - 20 : 12
+2 ^ 12 : 4096
+
+CIDR range: /16 to /28
+
+/16:
+32 - 16 : 16
+2 ^ 16 : 65636
+---> 65635 ip addresses
+
+/28:
+32 - 28 : 4
+2 ^ 4 : 16
+
+/32 :
+32 -32 = 0
+2 ^ 0 = 1
+
+---------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
