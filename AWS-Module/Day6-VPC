@@ -1,5 +1,6 @@
                               VPC
                     Virtual Private Cloud
+                             --------------> Networking
 
 --> VPC is a virtual network or datacenter inside AWS for one client.
 --> It is logically isolated from the other virtual networks in the AWS cloud.
@@ -9,4 +10,27 @@
 --> once the VPC is created, you can not changed its CIDR
 --> if you need different CIDR size then created new VPC
 --> Different subnets within VPC van not overlap.
+
+Two types of VPC:
+1. Default VPC
+2. Custom VPC
+
+**Steps to create VPC:
+1. Create VPC: 
+   --------> VPC name
+   --------> VPC's CIDR --> 10.0.0.0/16
+
+2. Create subnet: (Sub Network)
+   --------> select your VPC
+   --------> subnet name
+   --------> subnet CIDR --> 10.0.0.0/24
+
+3. Create Internet Gateway:
+   --------> gateway name and attched to VPC
+
+4. Create Route Table:
+   --------> route table name and select VPC
+          ------> associate subnet
+          ------> add route
+
 
