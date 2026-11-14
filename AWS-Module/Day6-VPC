@@ -33,4 +33,22 @@ Two types of VPC:
           ------> associate subnet
           ------> add route
 
+**Subnet:
+--> subnet is a range of IP addresses within a Virtual Private Cloud (VPC).
+**subnetting:
+--> Subnetting is the process of dividing a large network into multiple smaller networks called subnets.
+
+**Why we need subnetting:
+1. Security
+2. Network Organization
+3. High Availabiti
+4. Better Network Management
+5. Better IP allocation
+6. Better Traffic Management
+
+**Internet Gateway:
+--> An Internet Gateway (IGW) is an AWS component that allows communication between resources in a VPC and the public internet.
+
+**Route table:
+--> A Route Table is a collection of rules (routes) that determines where network traffic from a subnet or gateway should go.
 
