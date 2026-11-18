@@ -75,4 +75,27 @@ acts as a secure entry point to access servers in private subnets.
 --> VPC Peering is a networking connection between two Virtual Private Clouds (VPCs)
  that allows resources in those VPCs to communicate privately using private IP addresses.
 
- 
+**curl command: (Client URL)
+--> curl allow us to communicate with websites and remote servers directly from terminal
+syntax: curl <url>
+eg: curl https://www.google.com
+
+**Network Security:
+1. Security group
+2. NACL
+
+2. NACL: (Network Access Control List)
+--> It is optional layer that controls incoming and outgoing traffic at the subnet level.
+
+        Security group                                  NACL
+-works on instance level                       -works on subnet level
+-statful, return traffic                       -stateless, return traffic must 
+is automatically allowed                     be allowed by rules
+-works on allow rule only                      - works on allow and deny rules
+-applies to an instance only             -applies to all instances in the subnet
+
+
+**EIP : Elastic IP
+-->An EIP is a static public IP adresss provided by AWS.
+--> unlike a normal public IP address an Elastic IP address remains the same even when you stop and start your instance.
+
