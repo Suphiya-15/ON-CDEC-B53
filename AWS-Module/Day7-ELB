@@ -1,0 +1,44 @@
+                                ELB
+                        Elastic Load Balancer
+
+--> Load balancer distributes the incoming web traffic among avaialble servers.
+--> Features:
+1. High avaialability
+2. Fault tolerance
+
+--> ELB types:
+1. Application Load Balancer: (ALB)
+--> HTTP and HTTPS traffic
+--> Path based routing
+--> Application LB works on 7th layer of OSI model which Application layer.
+
+2. Network Load Balancer: (NLB)
+--> TCP and UDP traffic 
+--> ultra low latency
+--> handle millions request per sec 
+--> Network LB works on 4th layer of OSI model which is transport layer.
+
+3. Gateway Load Balancer:
+--> Security 
+
+4. Claasic Load Balancer: Prev gen
+
+Shell Script :
+#!/bin/bash 
+sudo su -
+yum install httpd -y
+systemctl start httpd 
+systemctl enable httpd
+echo "<h1>comment</h1>" >/var/www/html/index.html
+
+**Listeners:
+-->A Listener is a process that checks for incoming connection requests
+ on a specific protocol and port.
+
+**Target Group:
+--> A Target Group is a collection of backend resources (targets) where the load balancer sends incoming requests.
+
+Targets can include:
+1. EC2 instances
+2. IP addresses
+
