@@ -1,0 +1,46 @@
+                     Autoscaling
+
+--> Autoscaling is an AWS feature that monitor and automatically increse and decrese number of server based on demand.
+
+--> Types of Autoscaling 
+1. Horizontal Scaling
+2. Vertical scaling
+
+1. Horizontal scaling: (autoscaling) : Automatic
+--> Adding or removing instances.
+--> scale out : add more server
+--> scale in : remove instances
+
+2. Vertical scaling : manual
+--> increasing or decresing the capacity of the same instance. 
+--> scale up : upgread to a larger type.
+--> scale in : downgread to a smaller instance type.
+
+Stress command:
+--> the stres command is used to generate artifical load on a linux system by stressing CPU, memory and disk.
+--> it is maninly bused for testing
+--> install stress command
+yum install stress -y
+
+syntax:
+stress --cpu 2 -t 60
+here,
+stress : command to generate load
+--cpu : create CPU stress workers
+2 : create 2 workers that continuously perform calculation
+-t : timeline
+60 : give load for 60 seconds
+
+
+**Project:
+Host website using autoscaling and load balancer features
+services:
+1. VPC
+2. autoscaling
+--> ec2 service template
+    ---> userdata
+     ---> script
+          --> comment: $(hostname) command
+3. load balancer
+
+
