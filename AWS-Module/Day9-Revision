@@ -1,0 +1,27 @@
+1. What is AWS??
+2. What are key pairs?
+3. What are pricing model for EC2 instance?
+4. What are EBS volumes?
+5. What are the different types of instances?
+6. What is autoscaling?
+7. What is EIP?
+8. What is VPC?
+9. What is VPC Peering connection?
+10. What are NAT gateways?
+11. What is ELB?
+
+12. What is the difference between public and private subnets?
+13. What is the difference between security groups and network ACLs?
+14. What is the difference between horizontal and vertical scaling?
+15. What is the difference between on-demand and reserved instances?
+16. What is the difference between spot instances and on-demand instances?
+17. What is the difference between EBS and instance store?
+
+18. is it possible to convert public subnet to the private subnet? 
+19. is it possible to reduce a ebs volume size?
+20. by default how many EIP address does AWS offer to each account?
+21. what is the difference between a stateful and stateless firewall?
+22. what is the difference between a bastion host and a NAT instance?
+23. how can you connect to an EC2 instance in a private subnet?
+24. how can you connect to an EC2 instance in a public subnet?
+25. what is the difference between a public IP and an elastic IP?
