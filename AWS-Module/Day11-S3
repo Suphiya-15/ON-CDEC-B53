@@ -1,0 +1,24 @@
+                            S3
+                    Simple Storage Service
+                              -----------> Storage
+
+HW:
+EBS vs EFS vs S3
+
+--> you can use s3 to store and retrieve any amount of data at any time, 
+from anywhere on the web.
+--> S3 is a object based storage.
+--> S3 is a non bootable storage. you cannot install OS on S3.
+--> S3 provides high avaialbility and durability.
+--> durability is 99.999999999% (11 9's) and availability is 99.99% (4 9's).
+--> s3 has distributed architecture, where objcets are stored in multiple locations
+in a region. (stored in min 3 location within a region)
+
+--> in s3 data stored in a bucket.
+--> bucket is a flat container for objects.
+--> can not create nested buckets.(bucket inside a bucket)
+--> s3 is region specific.
+-->  min and max capacity of s3 object is 0 byte to 50TB.
+--> you can have upto 100 buckets per account by default. (can be increased by request)
+
+
